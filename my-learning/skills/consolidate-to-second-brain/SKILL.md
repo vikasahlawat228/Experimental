@@ -1,15 +1,24 @@
 ---
 name: consolidate-to-second-brain
-description: Push durable knowledge from recent learning sessions into the second-brain (../../team-brain/) so it shows up in real work. Triggers at the end of a learning module (mastery ≥ 4 on the module's main concept), when Vikas says "push to second-brain," "consolidate this," "save this to team-brain," or "let's update the second-brain." Decides what's note material vs. what's skill material, drafts both, and waits for confirmation before writing.
+description: Push durable knowledge from a completed learning module into the second-brain (../../team-brain/) so it shows up in real work. Triggers in two cases — when a module wraps (main concept ≥ 4 and promise delivered), or when Vikas explicitly says "push to second-brain," "consolidate this," or "save this to team-brain." Decides what's note material vs. what's skill material, may propose restructuring the second-brain when it has grown unwieldy, drafts everything, and waits for confirmation before writing.
 ---
 
 # Consolidate to second-brain
 
 ## When to use this skill
 
-A learning module has reached mastery ≥ 4, or Vikas asks to consolidate. The job is to translate what was learned into shapes the second-brain at `../../team-brain/` will keep using — exocortex notes (the durable facts and mental models) and possibly new skills (the repeatable moves).
+Invoked by `daily-learning` when a module wraps, or directly by Vikas at any time. The job is to translate what was learned into shapes the second-brain at `../../team-brain/` will keep using — exocortex notes (durable facts and mental models) and possibly new skills (repeatable moves).
 
 The discipline is **propose, don't push**: every consolidation pass shows the proposed files and waits for Vikas's confirmation before writing. The second-brain is too important to write to silently.
+
+## The two triggers
+
+| Trigger | What it means |
+|---|---|
+| **Module wrap** | The module's main concept hit mastery ≥ 4 *and* the module's "one-sentence promise" has been delivered. Invoked by `daily-learning` Phase 4. |
+| **On demand** | Vikas asked. Honor immediately. |
+
+Session-end without a module wrap is **not** a trigger. The recap captures the session; the second-brain waits.
 
 ## Procedure
 
@@ -83,6 +92,35 @@ After writing, in the topic folder:
 - Update `topics/<slug>/skills-index.md` with pointers to any new skills.
 - Note the consolidation pass in the relevant recap ("Consolidated to second-brain on YYYY-MM-DD: <files>").
 - Resolve anything in `progress.md`'s "Questions I still have"-style queues that the consolidation addressed.
+
+### 7. (When the second-brain has grown) Propose restructuring
+
+The second-brain is a living artifact. After a topic has dropped 5+ modules' worth of content, or a directory has 8+ files, or two notes start overlapping, the cleanest consolidation is often a **restructure**, not another append. This skill is allowed — and expected — to propose restructuring when it sees the need.
+
+**Triggers that should make you propose restructuring (any one is enough):**
+
+- A directory in `../../team-brain/exocortex/<bucket>/` has more than ~8 files and they fall into clear sub-themes.
+- Two existing notes have grown overlapping content and would be clearer as one merged note or as a split along a different axis.
+- The new content you're about to propose would create a clearer abstraction than the current shape (e.g., a new "subsystem-X-overview.md" that lifts repeated content out of three service files).
+- The file you're proposing belongs equally in two buckets (concepts and services, say) — that's a signal the bucketing might want to change.
+- You'd otherwise be appending to a file that's now > ~600 words and getting hard to skim.
+
+**Restructuring moves you may propose:**
+
+- **Split** a file into two or more along a clearer axis (architecture vs. operations, current vs. historical, etc.).
+- **Merge** two overlapping files into one, with a one-line "see also" left at the old paths if they were linked from elsewhere.
+- **Promote** a section that's grown into its own note (e.g., a "Data model" section inside a service file becomes `data-model-<service>.md`).
+- **Add a sub-directory** when a flat bucket has gotten unwieldy (e.g., `exocortex/services/` → `exocortex/services/payments/`, `exocortex/services/auth/`, …). Move the existing files. Update `INDEX.md`.
+- **Lift** a recurring mental model that shows up in several service notes into a `concepts/` note that the service notes then link to.
+
+**Rules for restructuring:**
+
+- **Always propose, never silently restructure.** Show Vikas a diff-style summary: "Move these N files into a new subdir; merge X and Y into Z; lift this section into a new concepts note." Wait for his call.
+- **Preserve provenance.** When you move or merge, preserve the "As of YYYY-MM-DD" lines and the link back to the source `my-learning` module that produced the content. Don't rewrite history.
+- **Update `INDEX.md` in the same pass.** A restructure that doesn't update the index is half-done.
+- **Don't restructure for the sake of it.** The bar is "the new shape will be materially clearer to read in six months." If you can't articulate that benefit in one line, leave the structure alone.
+
+If no restructuring is warranted, skip step 7. Most consolidation passes will skip it; that's fine.
 
 ## What good output looks like
 

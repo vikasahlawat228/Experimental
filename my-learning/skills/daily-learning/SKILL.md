@@ -104,9 +104,18 @@ After delivery:
 
 4. **Update `concept-graph.md`** with the new connection if today's concept linked to a prior one. Include the bridge sentence in the connections table.
 
-5. **Consider consolidation.** If today's session closed out a module (the module's main concept reached mastery ≥ 4), or if Vikas explicitly asked, **invoke `consolidate-to-second-brain`** in the same turn. If neither, don't push — the second-brain shouldn't accumulate half-baked things.
+5. **Judge consolidation (module wrap or on demand only).** Only two triggers invoke `consolidate-to-second-brain`:
 
-6. **End with one line in chat:** *"Saved. Next time we can pick up with <cliffhanger>."*
+   | Trigger | Behavior |
+   |---|---|
+   | **Module wrapped** (main concept ≥ 4 *and* the module's "promise" has been delivered) | Invoke `consolidate-to-second-brain`. Almost always propose at least one consolidation — typically a service or concept note that distills the module, sometimes also a skill. |
+   | **Vikas explicitly asks** ("push to second-brain," "consolidate this," "save this to team-brain") | Honor immediately, regardless of session phase — even mid-Phase-3 if he interrupts. |
+
+   **Do not push at session-end if the module hasn't wrapped.** End-of-session without a module boundary means the recap captures the session; the second-brain waits. The second-brain is for what's owned, not what's being acquired.
+
+   In every case: `consolidate-to-second-brain` proposes; it never writes silently.
+
+6. **End with one line in chat:** *"Saved. Next time we can pick up with <cliffhanger>."* If consolidation ran, mention what landed in the second-brain too.
 
 ---
 

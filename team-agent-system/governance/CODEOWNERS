@@ -1,0 +1,21 @@
+# CODEOWNERS — curation roles (RULES.md §R10)
+# GitHub/GitLab enforce review by these owners. Keep curators to 1–2, rotating monthly.
+# Replace placeholders with real handles.
+
+# --- Curators: approve promotions to the shared agent layer ---
+/AGENTS.md                      @curator-current
+/knowledge/                     @curator-current
+/.agents/                       @curator-current
+
+# --- Evals & rubric: anti-drift — require TWO human approvers, never the agent ---
+/evals/                         @curator-current @curator-backup
+/evals/rubric.md                @curator-current @curator-backup
+
+# --- The constitution: team consensus ---
+/governance/RULES.md            @curator-current @curator-backup @tech-lead
+
+# --- Google-stack bindings: whoever owns the ADK/Antigravity integration ---
+/adk/                           @platform-owner
+
+# Rotation: update @curator-current monthly. Log the rotation in your team channel.
+# As org overlap grows, add org-platform owners above the team curators for the org tier.

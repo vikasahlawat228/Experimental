@@ -1,0 +1,139 @@
+<svg viewBox="0 0 920 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ttl dsc" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+  <title id="ttl">Self-improving team agent system — eight layers wrapped by a human-governed feedback loop</title>
+  <desc id="dsc">Eight architecture layers (L0 substrate up to L7 governance) on the left; a feedback loop USE to OBSERVE to PROPOSE to EVAL GATE to PROMOTE on the right showing why quality compounds; a footer mapping portable concepts to Google ADK, Vertex Memory Bank, MCP, A2A and Gemini caching.</desc>
+
+  <!-- Colors use CSS variables with hex fallbacks, so this renders in the themed widget AND as a standalone file. -->
+
+  <!-- Title -->
+  <text x="40" y="38" font-size="22" font-weight="700" fill="var(--text-primary,#18181b)">Self-Improving Team Agent System</text>
+  <text x="40" y="59" font-size="13" fill="var(--text-secondary,#71717a)">Portable core (Claude Code · Cursor · Gemini CLI · Antigravity) + Google-stack bindings — gets better with use, doesn&#39;t rot</text>
+
+  <!-- Governance wrapper band -->
+  <rect x="40" y="74" width="840" height="32" rx="8" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.12" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.45"/>
+  <text x="460" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">GOVERNANCE · humans + RULES.md — propose ▸ evaluate ▸ promote ▸ prune  (nothing self-merges)</text>
+
+  <!-- ===== Left: eight layers ===== -->
+  <text x="40" y="132" font-size="12" font-weight="600" letter-spacing="0.5" fill="var(--text-secondary,#71717a)">EIGHT LAYERS  (target state · L0 → L7)</text>
+
+  <!-- layer rows: helper layout, step 56 from y=146 -->
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <!-- row generator (manual) -->
+    <!-- L7 -->
+    <g transform="translate(40,146)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L7</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Governance — the human layer</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">curators own promotion &amp; prune</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ drift / commons</text>
+    </g>
+    <!-- L6 -->
+    <g transform="translate(40,202)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L6</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Feedback &amp; evals</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">the change gate (CI)</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ every force</text>
+    </g>
+    <!-- L5 -->
+    <g transform="translate(40,258)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L5</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Enforcement</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">deterministic hooks / ADK Plugins</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ non-compliance</text>
+    </g>
+    <!-- L4 -->
+    <g transform="translate(40,314)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L4</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Orchestration / harness</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">lead writer + read/verify sub-agents</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ cost / chaos</text>
+    </g>
+    <!-- L3 -->
+    <g transform="translate(40,370)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L3</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Skills &amp; playbooks</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">self-improvement lives here</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ drift / forgetting</text>
+    </g>
+    <!-- L2 -->
+    <g transform="translate(40,426)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L2</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Instructions</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">AGENTS.md · one source of truth</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ bloat / forks</text>
+    </g>
+    <!-- L1 -->
+    <g transform="translate(40,482)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L1</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Knowledge — vectorless RAG</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">pointers + gotchas, retrieve live</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ staleness / rot</text>
+    </g>
+    <!-- L0 -->
+    <g transform="translate(40,538)">
+      <rect width="510" height="50" rx="8" fill="var(--text-primary,#18181b)" fill-opacity="0.04" stroke="var(--text-primary,#18181b)" stroke-opacity="0.14"/>
+      <rect x="12" y="13" width="36" height="24" rx="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.16"/>
+      <text x="30" y="29" text-anchor="middle" font-size="12" font-weight="700" fill="var(--accent-primary,#4f46e5)">L0</text>
+      <text x="60" y="24" font-size="14" font-weight="700" fill="var(--text-primary,#18181b)">Substrate — org models &amp; tools</text>
+      <text x="60" y="41" font-size="11.5" fill="var(--text-secondary,#71717a)">reuse via MCP · model-agnostic</text>
+      <text x="498" y="22" text-anchor="end" font-size="10" font-style="italic" fill="var(--text-secondary,#71717a)">↳ lock-in</text>
+    </g>
+  </g>
+
+  <!-- ===== Right: the self-improvement loop ===== -->
+  <text x="610" y="132" font-size="12" font-weight="600" letter-spacing="0.5" fill="var(--text-secondary,#71717a)">WHY IT COMPOUNDS</text>
+
+  <defs>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="var(--accent-primary,#4f46e5)"/></marker>
+  </defs>
+
+  <g font-size="12" font-weight="600">
+    <!-- nodes x 620..820 -->
+    <g transform="translate(620,146)"><rect width="200" height="34" rx="17" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.5"/><text x="100" y="22" text-anchor="middle" fill="var(--text-primary,#18181b)">1 · USE  (real work + telemetry)</text></g>
+    <g transform="translate(620,200)"><rect width="200" height="34" rx="17" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.5"/><text x="100" y="22" text-anchor="middle" fill="var(--text-primary,#18181b)">2 · OBSERVE  (failures, friction)</text></g>
+    <g transform="translate(620,254)"><rect width="200" height="34" rx="17" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.5"/><text x="100" y="22" text-anchor="middle" fill="var(--text-primary,#18181b)">3 · PROPOSE  (candidate, via PR)</text></g>
+    <g transform="translate(620,308)"><rect width="200" height="34" rx="17" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.22" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.9" stroke-width="1.5"/><text x="100" y="22" text-anchor="middle" font-weight="700" fill="var(--text-primary,#18181b)">4 · EVAL GATE  (fail → block)</text></g>
+    <g transform="translate(620,362)"><rect width="200" height="34" rx="17" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.5"/><text x="100" y="22" text-anchor="middle" fill="var(--text-primary,#18181b)">5 · PROMOTE  (versioned)</text></g>
+
+    <!-- down arrows -->
+    <line x1="720" y1="180" x2="720" y2="198" stroke="var(--accent-primary,#4f46e5)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <line x1="720" y1="234" x2="720" y2="252" stroke="var(--accent-primary,#4f46e5)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <line x1="720" y1="288" x2="720" y2="306" stroke="var(--accent-primary,#4f46e5)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <line x1="720" y1="342" x2="720" y2="360" stroke="var(--accent-primary,#4f46e5)" stroke-width="1.5" marker-end="url(#arr)"/>
+    <!-- return arrow promote -> use -->
+    <path d="M820,379 H862 V163 H820" fill="none" stroke="var(--accent-primary,#4f46e5)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+    <text x="872" y="275" font-size="10" font-weight="600" fill="var(--text-secondary,#71717a)" transform="rotate(90 872 275)">ratchet ↑</text>
+  </g>
+
+  <!-- caption -->
+  <text x="610" y="420" font-size="11.5" fill="var(--text-secondary,#71717a)">A change merges only if it beats the</text>
+  <text x="610" y="436" font-size="11.5" fill="var(--text-secondary,#71717a)">eval baseline. Every failure becomes an</text>
+  <text x="610" y="452" font-size="11.5" fill="var(--text-secondary,#71717a)">eval task → can&#39;t regress. Prune keeps</text>
+  <text x="610" y="468" font-size="11.5" fill="var(--text-secondary,#71717a)">it lean. Correctness, never popularity.</text>
+
+  <!-- legend -->
+  <circle cx="616" cy="498" r="5" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.5"/>
+  <text x="628" y="502" font-size="10.5" fill="var(--text-secondary,#71717a)">accent = human-governed feedback loop</text>
+
+  <!-- ===== Footer: Google bindings ===== -->
+  <line x1="40" y1="606" x2="880" y2="606" stroke="var(--text-primary,#18181b)" stroke-opacity="0.12"/>
+  <text x="40" y="628" font-size="12" font-weight="600" letter-spacing="0.5" fill="var(--text-secondary,#71717a)">GOOGLE BINDINGS  ·  portable artifacts stay the source of truth</text>
+  <g font-size="10.5" font-weight="600" text-anchor="middle">
+    <g transform="translate(40,640)"><rect width="186" height="28" rx="14" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.35"/><text x="93" y="18" fill="var(--text-primary,#18181b)">hooks → ADK Plugins/callbacks</text></g>
+    <g transform="translate(238,640)"><rect width="210" height="28" rx="14" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.35"/><text x="105" y="18" fill="var(--text-primary,#18181b)">memory → Vertex Memory Bank</text></g>
+    <g transform="translate(460,640)"><rect width="150" height="28" rx="14" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.35"/><text x="75" y="18" fill="var(--text-primary,#18181b)">tools → MCP · A2A</text></g>
+    <g transform="translate(622,640)"><rect width="258" height="28" rx="14" fill="var(--accent-primary,#4f46e5)" fill-opacity="0.10" stroke="var(--accent-primary,#4f46e5)" stroke-opacity="0.35"/><text x="129" y="18" fill="var(--text-primary,#18181b)">stable context → Gemini caching · 1M ctx</text></g>
+  </g>
+</svg>

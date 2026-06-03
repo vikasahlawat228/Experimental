@@ -1,0 +1,35 @@
+# Eval task — one YAML per task. Harness-agnostic; map fields to your runner.
+id: <kebab-case-unique-id>
+suite: regression            # regression (blocks CI) | capability (trend only)
+source: "<where this came from — bug #, incident, review comment>"
+created: <YYYY-MM-DD>
+owner: "@<owner>"
+
+prompt: >
+  <The task given to the agent. Be realistic — phrase it like a real request,
+  including the ambiguity a teammate would actually leave in.>
+
+# Optional setup (repo state, fixtures) the runner applies before the task.
+setup: "<branch / fixture / seed command, or 'none'>"
+
+# Binary checks (see rubric.md). All `required: true` must pass for the task to pass.
+checks:
+  - id: tests_pass
+    type: programmatic        # programmatic | assertion | llm-judge
+    required: true
+    spec: "test suite exits 0"
+  - id: <behavioral_check>
+    type: assertion
+    required: true
+    spec: "<expected output / diff_contains / file_modified>"
+  - id: <explanation_quality>
+    type: llm-judge
+    required: false
+    spec: "PR description explains WHY, not just what"
+    judge_model: "<a different model than the generator>"
+    calibrated: false         # set true once a human has validated this judge check
+
+# A known-good solution proves the task is solvable and the grader is correct.
+reference_solution: "<link/path to a diff or expected result>"
+
+notes: "<gotcha this guards, link to knowledge/gotchas/<id>.md if any>"
